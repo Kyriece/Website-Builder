@@ -32,6 +32,13 @@ html, body {
     vertical-align: middle;
 }
 
+#navbar-right {
+  position: absolute;
+  display: inline-block;
+  top: 35px;
+  right: 35px;
+}
+
 #return-home-txt {
     color: #C2C2C2;
 }
@@ -46,8 +53,8 @@ html, body {
 
 #return-home-icon {
     position: relative;
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
@@ -58,6 +65,15 @@ html, body {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+}
+
+#login-icon {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    background-size: contain;
+    cursor: pointer;
+    background-image: url("pics/9009119_in_sign\ in_login_user_account_icon.png")
 }
 
 #project-details {
