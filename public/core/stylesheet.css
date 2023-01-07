@@ -5,3 +5,137 @@ html, body {
     width: 100%;
     background-color: #3D093E;
 }
+
+.inline-middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cover {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: fit-content;
+    background-color: #49094A;
+    z-index: 999;
+}
+
+#navbar-left {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#return-home-txt {
+    color: #C2C2C2;
+}
+
+#return-home {
+    position: relative;
+    display: table;
+    vertical-align: middle;
+    width: 70px;
+    height: 100%;
+}
+
+#return-home-icon {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-image: url("pics/circle_x.png");
+}
+
+#return-home-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#project-details {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#app-watermark {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 10px;
+    font-family: "Work Sans";
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18.5px;
+    color: #fff;
+}
+
+#project-name {
+    font-family: "Inter";
+    margin-top: 3px;
+    font-size: 32.5px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#canvas-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#canvas-toolbar {
+    position: relative;
+    height: 100%;
+    width: 70px;
+    box-sizing: border-box;
+    padding-top: 150px;
+    transition: ease all 0.3s;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+#viewport-settings {
+    position: absolute;
+    width: 150px;
+    left: 100px;
+    font-family: "Roboto Mono";
+    color: #ccc;
+}
+
+#canvas-toolbar:hover {
+    background-color: #292929;
+}
+
+.canvas-toolbar-option {
+    position: relative;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 5px;
+}
+
+#canvas-inner {
+    position: absolute;
+    top: -150%;
+    left: -150%;
+    height: 300%;
+    width: 300%;
+    background-color: #3D093E;
+    background-image: url("pics/boxes_310932.png");
+    background-repeat: repeat;
+}
+
+.canvas-toolbar-icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
