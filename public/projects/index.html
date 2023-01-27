@@ -3,19 +3,170 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto+Mono:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="stylesheet.css" />
 
+    <div id="project" class="ui-fullscreen">
+
+        <div id="project-inner" class="ui-fullscreen-inner">
+
+            <div class="ui-fs-devstudio">DEVSTUDIO</div>
+            <div class="ui-fs-title">Create a new project</div>
+            
+            <div class="ui-fs-options">
+                <div class="ui-fs-option">
+                    <div class="ui-fs-otitle">PROJECT TITLE</div>
+                    <input class="text-input" type="text" />
+                </div>
+                <div class="ui-fs-option ui-fs-odd">
+                    <div class="ui-fs-otitle">PROJECT TITLE</div>
+                    <input class="text-input" type="text" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
     <div id="navbar">
 
          <div id="navbar-inner">
             <div id="navbar-left" class="inline-middle">
                 <div id="devstudio-txt">DEVSTUDIO</div>
             </div>
-            <div id="navbar-right" class="inline-middle"></div>
+            <div id="navbar-right" class="inline-middle">
+                <div id="signout">
+                    <div id="signout-txt" class="inline-middle">Signout</div>
+                    <div id="signout-icon" class="inline-middle cover"></div>
+                </div>
+            </div>
          </div>
+
+    </div>
+
+    <div id="dashboard-section">
+
+        <div id="dashboard-inner" class="inner-section">
+            <div id="dashboard-title">Project Dashboard</div>
+            <div id="project-tools">
+                <div class="project-tool" id="getting-started">
+                    <div class="project-tool-top">
+                        <div class="project-tool-icon inline-middle" style="background-image: url(pics/plus.png);"></div>
+                        <div class="project-tool-txt inline-middle">Getting started</div>
+                    </div>
+                    <div class="project-tool-bottom">Not sure where to begin? Click here and we'll show you around!</div>
+                </div>
+    
+                <div class="project-tool" id="new-project">
+                    <div class="project-tool-top">
+                        <div class="project-tool-icon inline-middle" style="background-image: url(pics/plus.png);"></div>
+                        <div class="project-tool-txt inline-middle">New project</div>
+                    </div>
+                    <div class="project-tool-bottom">Click here to start a new project</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="dashboard-contents">
+
+        <div id="no-projects">Showing 0 projects</div>
+
+        <div id="projects-container">
+
+            <div class="project">
+
+                <div class="project-title">MyGene CRUD</div>
+                <div class="project-description">No description entered</div>
+
+                <div class="project-details">
+                    <div class="project-detail" style="margin-bottom: 2px;">
+                        <div class="project-detail-icon cover inline-middle project-detail-modified"></div>
+                        <div class="project-detail-txt inline-middle">Last modified today</div>
+                    </div>
+                    <div class="project-detail">
+                        <div class="project-detail-icon cover inline-middle project-detail-created"></div>
+                        <div class="project-detail-txt inline-middle">Created today</div>
+                    </div>
+                </div>
+
+                <div class="project-table">
+                    <div class="project-table-item inline-middle">
+                        <div class="project-table-top">DOCUMENTS</div>
+                        <div class="project-table-bottom">1</div>
+                    </div><div class="project-table-item inline-middle">
+                        <div class="project-table-top">CONFIGS</div>
+                        <div class="project-table-bottom">2</div>
+                    </div><div class="project-table-item inline-middle">
+                        <div class="project-table-top">Shared</div>
+                        <div class="project-table-bottom">No</div>
+                    </div><div class="project-table-item inline-middle">
+                        <div class="project-table-top">Size</div>
+                        <div class="project-table-bottom">2.3mB</div>
+                    </div>
+                </div>
+
+                <div class="project-actions">
+                    <div class="project-button project-delete" style="margin-bottom: 6px;">
+                        <div class="project-button-icon inline-middle contain" style="background-image: url('pics/trash.png');"></div>
+                        <div class="project-button-txt inline-middle">Delete project</div>
+                    </div>
+                    <div class="project-button project-configure">
+                        <div class="project-button-icon inline-middle contain" style="background-image: url('pics/tool.png');"></div>
+                        <div class="project-button-txt inline-middle">Configure project</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="project">
+
+                <div class="project-title">MyGene CRUD</div>
+                <div class="project-description">No description entered</div>
+
+                <div class="project-details">
+                    <div class="project-detail" style="margin-bottom: 2px;">
+                        <div class="project-detail-icon cover inline-middle project-detail-modified"></div>
+                        <div class="project-detail-txt inline-middle">Last modified today</div>
+                    </div>
+                    <div class="project-detail">
+                        <div class="project-detail-icon cover inline-middle project-detail-created"></div>
+                        <div class="project-detail-txt inline-middle">Created today</div>
+                    </div>
+                </div>
+
+                <div class="project-table">
+                    <div class="project-table-item inline-middle">
+                        <div class="project-table-top">DOCUMENTS</div>
+                        <div class="project-table-bottom">1</div>
+                    </div><div class="project-table-item inline-middle">
+                        <div class="project-table-top">CONFIGS</div>
+                        <div class="project-table-bottom">2</div>
+                    </div><div class="project-table-item inline-middle">
+                        <div class="project-table-top">Shared</div>
+                        <div class="project-table-bottom">No</div>
+                    </div><div class="project-table-item inline-middle">
+                        <div class="project-table-top">Size</div>
+                        <div class="project-table-bottom">2.3mB</div>
+                    </div>
+                </div>
+
+                <div class="project-actions">
+                    <div class="project-button project-delete" style="margin-bottom: 6px;">
+                        <div class="project-button-icon inline-middle contain" style="background-image: url('pics/trash.png');"></div>
+                        <div class="project-button-txt inline-middle">Delete project</div>
+                    </div>
+                    <div class="project-button project-configure">
+                        <div class="project-button-icon inline-middle contain" style="background-image: url('pics/tool.png');"></div>
+                        <div class="project-button-txt inline-middle">Configure project</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 

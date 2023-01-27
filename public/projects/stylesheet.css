@@ -1,5 +1,6 @@
 html, body {
     background-color: #49094A;
+    color: #fff;
     margin: 0px;
     padding: 0px;
     height: 100%;
@@ -13,12 +14,86 @@ html, body {
 
 .cover {
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contain {
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-#navbar {
+.text-input {
+    position: relative;
+    box-sizing: border-box;
+    width: 150px;
+    padding: 7.5px;
+    color: #fff;
+    border: 0px;
+    outline: none;
+    background-color: #99009C;
+}
+
+.ui-fullscreen {
     position: fixed;
+    display: table;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    z-index: 9999;
+    text-align: center;
+}
+
+.ui-fullscreen-inner {
+    position: relative;
+    display: table-cell;
+    width: fit-content;
+    height: fit-content;
+    vertical-align: middle;
+}
+
+.ui-fs-title {
+    position: relative;
+    font-family: "Work Sans";
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.ui-fs-options {
+    position: relative;
+    background-color: #400C41;
+    left: 50%;
+    font-size: 18px;
+    width: fit-content;
+    padding: 25px;
+    border-radius: 20px;
+    transform: translateX(-50%);
+}
+
+.ui-fs-option {
+    position: relative;
+    display: block;
+    width: fit-content;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+
+.ui-fs-odd {
+    background-image: url("pics/lines393939.png");
+    background-repeat: repeat;
+}
+
+.ui-fs-otitle { 
+    font-family: "Roboto Mono"
+}
+
+#navbar {
+    position: sticky;
     top: 0px;
     width: 100%;
     padding-top: 12.5px;
@@ -33,13 +108,19 @@ html, body {
     
 }
 
-#devstudio-txt {
+#devstudio-txt, .ui-fs-devstudio {
     position: relative;
     font-family: "Work Sans";
     font-size: 25px; 
     font-weight: 600; 
     text-transform: uppercase;
     letter-spacing: 10px;
+}
+
+.ui-fs-devstudio {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 10px;
 }
 
 #navbar-inner {
@@ -55,3 +136,276 @@ html, body {
     vertical-align: middle;
     width: 49.5%;
 }
+
+#navbar-right {
+    text-align: right;
+}
+
+#signout-icon {
+    position: relative;
+    height: 30px;
+    width: 60px;
+    background-image: url("pics/arrow.png");
+}
+
+#signout-txt {
+    position: relative;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#dashboard-section {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: #3D093E;
+    background-attachment: fixed;
+    background-image: url("pics/lines.png");
+    background-repeat: repeat;
+    box-sizing: border-box;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.inner-section, #dashboard-contents {
+    position: relative;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: fit-content;
+}
+
+#dashboard-title {
+    position: relative;
+    display: block;
+    font-size: 45px;
+    margin-bottom: 35px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Work Sans";
+}
+
+#dashboard-contents {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#no-projects {
+    position: relative;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-family: "Work Sans";
+}
+
+#project-tools {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.project-tool {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 300px;
+    height: 100%;
+    width: fit-content;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.2s ease all;
+    padding: 22.5px;
+    border-radius: 20px;
+    border-style: dashed;
+}
+
+#new-project {
+    position: relative;
+    background-color: #9e0e90;
+    border: 0.2em solid #b420a5;
+    border-style: dashed;
+    width: 250px;
+    margin-left: 8px;
+}
+
+#new-project:hover {
+    background-color: #b1009f;
+}
+
+#getting-started {
+    position: relative;
+    background-color: #790284;
+    border: 0.2em solid #8b0697;
+    border-style: dashed;
+}
+
+.project-tool-txt {
+    position: relative;
+    font-family: "Work Sans";
+    font-size: 22.5px;
+    margin-left: 3px;
+}
+
+.project-tool-icon {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    margin-right: auto;
+    text-align: right;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.project-tool-top {
+    position: relative;
+    display: block;
+    font-family: "Work Sans";
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.project-tool-bottom {
+    position: relative;
+    font-family: "Inter";
+    font-size: 17px;
+}
+
+.project {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    margin-right: 15px;
+    max-width: 400px;
+    height: fit-content;
+    padding: 25px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #303030;
+    transition: 0.2s ease all;
+    border-top: 0.2em solid #525252;
+    border-bottom: 0.2em solid #525252;
+    cursor: pointer;
+    background-image: url("pics/lines393939.png");
+    background-repeat: repeat;
+}
+
+.project:hover {
+    background-color: #353535;
+}
+
+.project-title {
+    font-family: "Work Sans";
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.project-details {
+    position: relative;
+    margin-bottom: 15px;
+    color: #CCCCCC;
+}
+
+.project-description {
+    position: relative;
+    font-size: 17.5px;
+    font-family: "Inter";
+    font-weight: 300;
+    margin-bottom: 13px;
+}
+
+.project-detail-icon {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+}
+
+.project-detail-txt {
+    font-family: "Inter";
+    font-size: 15px;
+}
+
+.project-detail-modified { background-image: url('pics/326602_create_edit_pencil_write_icon.png'); }
+.project-detail-created { background-image: url("pics/1564491_add_create_new_plus_icon.png"); };
+
+.project-table {
+    position: relative;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    color: #ccc;
+    font-size: 0;
+    border: 0.1em solid #ccc;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.project-table tr {
+    border: 0.1em solid #ccc;
+}
+
+.project-table-item {
+    position: relative;
+    border: 0.1em solid #ccc;
+}
+
+.project-table-top { 
+    font-family: "Roboto Mono";
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+    border-bottom: 0.1em solid #ccc;
+}
+
+.project-table-bottom {
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.project-button {
+    position: relative;
+    display: block;
+    max-width: 160px;
+    font-family: "Roboto";
+    font-weight: 400;
+    padding: 8px;
+    padding-right: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.project-button-icon {
+    position: relative;
+    height: 22.5px;
+    width: 22.5px;
+    margin-right: 3px;
+}
+
+.project-actions {
+    margin-top: 15px;
+}
+
+.project-delete { background-color: #A10101; }
+.project-delete:hover { background-color: #790000; }
+
+.project-configure { background-color: #0442E2; };
+.project-configure:hover { background-color: #042885 !important; };
