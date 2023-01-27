@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "caller": "^1.1.0"
+    "caller": "^1.1.0",
+    "express": "^4.18.2",
+    "jshashes": "^1.0.8",
+    "mongodb": "^4.13.0",
+    "socket.io": "^4.5.4"
   }
 }
